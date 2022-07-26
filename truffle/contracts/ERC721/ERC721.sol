@@ -21,6 +21,11 @@ contract ERC721 is IERC721, IERC721Metadata{
     mapping(uint => address) private _tokenApprovals;
     mapping(address=> mapping(address=> bool)) private _operatorApprovals;
 
+    constructor(string memory _name, string memory _symbol){
+        name = _name;
+        symbol = _symbol;
+    }
+
 //owner가 갖고있는 총nft갯수
     function balanceOf(address _owner) external override view returns(uint) {
         require(_owner != address(0), "ERC721 : balance query for the zero address");
@@ -93,9 +98,12 @@ contract ERC721 is IERC721, IERC721Metadata{
         address owner = ownerOf(_tokenId);
         require(owner == address(0));
 
+        _afterToken(address(0), _to, _tokenId);
         _balances[_to] += 1;
         _owners[_tokenId] = _to;
 
         emit Tranfer(address(0), _to, _tokenId);
     }
+
+    function _afterToken(address _from, address _to, uint _token)internal virtual {}
 }

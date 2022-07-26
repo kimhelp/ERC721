@@ -1,0 +1,71 @@
+{
+	"id": "e321767dd5882557bc340acec69ece55",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.10",
+	"solcLongVersion": "0.8.10+commit.fc410830",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Minting.sol": {
+				"content": "// // SPDX-License-Identifier: MIT\r\n// pragma solidity ^0.8.10;\r\n\r\n// import \"openzeppelin-solidity/contracts/token/ERC721/extensions/ERC721Enumerable.sol\";\r\n\r\n// contract Minting is ERC721{\r\n//     constructor(string memory _name, string memory _symbol)ERC721(_name,_symbol){\r\n\r\n//     }\r\n//     function _minting(uint _tokenID) public{\r\n//         _mint(msg.sender,_tokenID);\r\n//     }\r\n\r\n//     function tokenURI(uint _tokenID) public override pure returns(string memory){\r\n//         return \"http://localhost:3000/metadata/1/1.json\";\r\n//     }\r\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.10;\"\n--> Minting.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.10;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "Minting.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Minting.sol": {
+				"ast": {
+					"absolutePath": "Minting.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "553:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
