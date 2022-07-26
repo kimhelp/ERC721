@@ -1,0 +1,57 @@
+# OpenSea NFT
+
+ERC20 > 라이브러리
+라이브러리 먼저 만들어보고
+NFT 구현
+
+```
+mkdir truffle
+
+cd truffle
+
+npx truffle init
+
+```
+
+# remix 설치
+
+```
+npm i -g @remix-project/remixd
+cd contracts
+
+npx remixd -s . --remix-ide https://remix.ethereum.org
+```
+
+### 터미널 하나 추가
+
+```
+cd truffle
+npm init
+npm i openzeppelin-solidity
+```
+
+# Available Accounts
+
+(0) 0xb2d80589Dd093cA1ec25eb5603FeeB535cdC10A0 (100 ETH)
+(1) 0xcDF5c294E79A54AA541B6cb435490DE03E2ebf63 (100 ETH)
+(2) 0x2Fcd524f8a484dd150e45165bB33b00b2DaedDF1 (100 ETH)
+(3) 0x87A2e672117FAf01746FD102e09127A49A7c8EaD (100 ETH)
+(4) 0xe4667Fc064Fc88F1475638473a90770e4d7f2B42 (100 ETH)
+(5) 0x69312d5E41359b6037716267efB1B44aBf6951Fc (100 ETH)
+(6) 0xEeF399872460301Af0c9b29445a9E3A8Ea7B4244 (100 ETH)
+(7) 0xf3F52E9C16D31e02103c4E440947653e1D937A85 (100 ETH)
+(8) 0x9CCC38D508B9A8Da52626Cc4947E45eA0F9B98F1 (100 ETH)
+(9) 0x205cA3E825dB9F5b8f7D61C53b33D967784f17cc (100 ETH)
+
+# Private Keys
+
+(0) 0xfbed18a0c0614e8573e95392ace94ac4a7cddb45d0303eea8d98f86d048d6b93
+(1) 0x6bdf55a17213cec7759378bfbf44978da6bd7b946e03c4a1f8a62b7da38744c6
+(2) 0xdd26e40d0a3574b82f535f7fb977bd8d996dab411c0d923e75b9e468cb5274e6
+(3) 0xd1acc2a23bf42250c3feb9ec2e5d04b9c79ab35156c036dfcac10c2bd0d32e27
+(4) 0xb29e762c2b5601cc0bf3311be05bedeac4b8b035bbb1105e6b7e6088bd9f3769
+(5) 0xdd8b8909885ad7d3869b11ee4c023fcc69c79945e556f618232ccebc2605e33e
+(6) 0x195a51cb5c97276ef58945f71275bedeb255c51dceefc3a57dcedbe53752937d
+(7) 0x6e1e176cf091e0ed58954e83ffa7187f3d9f5660fbaccf0bc77a017b119b26d1
+(8) 0x5df5cd9885107a0660e5aaa631da0a53f7277165a6d80101ea29d0fa5e1937df
+(9) 0xc026d942c88654883b8964f9e2b8c8ee0bd94d46729d26554d3f7121f1079ad5
